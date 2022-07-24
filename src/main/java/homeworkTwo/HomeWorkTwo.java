@@ -1,6 +1,6 @@
 package homeworkTwo;
 
-import java.sql.SQLOutput;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class HomeWorkTwo {
@@ -140,7 +140,123 @@ public class HomeWorkTwo {
             else {
             System.out.println("Skaties pa labi, tad pa kreisi un ja nav mašīnu, skrien pāri");}
 
+        System.out.println("######");
 
 
+            luksoforsDivi();
+
+
+
+        System.out.println("5. UZDEVUMS ");
+
+        printbusinessCard();
+        printbusinessCard();
+        printbusinessCard();
+
+
+        System.out.println("6. UZDEVUMS");
+
+        printBusinessCardTwo("Edgars", "Porietis", "+371 25554867", 1989 );
+        printBusinessCardTwo("Jānis", "Bērziņš", "+371 5478555", 1995 );
+        printBusinessCardTwo("Anna", "Berziņa", "+371 479456699", 1990 );
+
+
+        System.out.println("7. UZDEVUMS");
+
+
+        int summa = sum(6,15);
+        System.out.println(summa);
+
+
+        System.out.println("8. UZDEVUMS");
+
+    average();
+
     }
+
+
+
+    static void printbusinessCard(){
+        String name = "Edgars";
+        String surName = "Porietis";
+        String telephone = "+371 55555555";
+        String dateOfBirth = "1989";
+        System.out.println("Vizītkarte");
+        System.out.println("#########");
+        System.out.println("Vārds:" + " " + name);
+        System.out.println("Uzvārds:" + " "+ surName);
+        System.out.println("Tālruņa nr.: "+ " "+ telephone);
+        System.out.println("Dzimšanas datums: "+ " " + dateOfBirth);
+        System.out.println("##########");
     }
+
+    static int sum(int a, int b){
+        return a+b;
+    }
+
+    static void average(){
+    Scanner scanner = new Scanner(System.in);
+    double skaitlis1;
+    double skaitlis2;
+    double skaitlis3;
+
+    double summa;
+    double avg;
+
+        System.out.println("Ievadi 3 decimālskaitļus");
+        skaitlis1 = scanner.nextDouble();
+        skaitlis2 = scanner.nextDouble();
+        skaitlis3 = scanner.nextDouble();
+
+        summa=skaitlis1 + skaitlis2 + skaitlis3;
+        avg = summa/3;
+
+        System.out.println(("Vidējais skaitlis:"+" " + avg));
+    }
+
+
+
+
+    static void printBusinessCardTwo(String name, String surName, String telephone, int dateOfBirth){
+
+        System.out.println("Vizītkarte");
+        System.out.println("#########");
+        System.out.println("Vārds:" + " " + name);
+        System.out.println("Uzvārds:" + " "+ surName);
+        System.out.println("Tālruņa nr.: "+ " "+ telephone);
+        System.out.println("Dzimšanas datums: "+ " " + dateOfBirth);
+        System.out.println("##########");
+    }
+
+    static void luksoforsDivi() {
+        Scanner scanner = new Scanner(System.in);
+        String zals = "zaļš";
+        String dzeltenes = "dzeltens";
+        String sarkans = "sarkans";
+
+        System.out.println("Ievadi krāsu luksoforam");
+        String krasa = scanner.nextLine();
+
+        boolean isGreen = zals.equals(krasa);
+        boolean isYellow = dzeltenes.equals(krasa);
+        boolean isRed = sarkans.equals(krasa);
+
+        if (isGreen) {
+            System.out.println("Aiziet");
+        } else if (isYellow) {
+            System.out.println("Gatavojamies");
+        } else if (isRed) {
+            System.out.println("Stāvi");
+        } else {
+            System.out.println("Šāda krāsa nav definēta");
+        }
+
+
+
+
+
+
+        }
+
+    }
+
