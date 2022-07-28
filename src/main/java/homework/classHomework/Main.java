@@ -4,14 +4,11 @@ public class Main {
     public static void main(String[] args) {
 
         Trijsturis trijsturis1 = new Trijsturis();
-
-        trijsturis1.malaA = 10;
-        trijsturis1.malaC = 2;
-        trijsturis1.malaB = 3;
+        
 
         System.out.println(trijsturis1.laukums());
 
-        System.out.println(trijsturis1.irVienadmalu(2,2,2));
+        System.out.println(trijsturis1.irVienadmalu(2,5,2));
         System.out.println(trijsturis1.irVienadSanu(5,8,5));
 
 
