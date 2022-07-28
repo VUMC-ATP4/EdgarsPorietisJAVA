@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Trijsturis trijsturis1 = new Trijsturis();
-        
+
 
         System.out.println(trijsturis1.laukums());
 
