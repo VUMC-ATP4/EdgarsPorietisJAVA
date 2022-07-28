@@ -10,10 +10,12 @@ public class House {
     Cena cena;
     boolean irStavvieta;
 
+   float f;
 
-    public void printetAdresi() {
-        System.out.println("Mājas adrese ir:" + ielasNosaukums + " " + majasNumurs);
-    }
+//    public void printetAdresi() {
+//        switch ();
+//        System.out.println("Mājas adrese ir:" + ielasNosaukums + " " + majasNumurs);
+//    }
 
 
 
