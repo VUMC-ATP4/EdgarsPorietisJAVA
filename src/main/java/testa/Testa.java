@@ -12,30 +12,12 @@ public class Testa {
         boolean isLoggedIn = false;
         int passAttemps = 0;
         while (passAttemps < MAX_PASS_ATTEMPS && !isLoggedIn) {
-            System.out.print("\nIevadiet PIN kodu: ");
+            System.out.print("Ievadiet PIN kodu: ");
             Scanner input = new Scanner(System.in);
             String inputPass = input.nextLine();
 
-            if (!(inputPass.equals(PASSWORD))) {
-                System.out.println("\nNepareiz PIN, mēģiniet vēlreiz");
-                passAttemps++;
-            } else {
-                System.out.println("\nPIN ir pieņemts, laipni lūdzam atpakaļ!");
-                isLoggedIn = true;
-                break;
-            }
+            System.out.println("PIN ir pieņemts, laipni lūdzam atpakaļ!");
+            isLoggedIn = true;
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
